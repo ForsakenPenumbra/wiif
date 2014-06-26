@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="">
+
+		<title>
+			What If I...Films
+		</title>
+	</head>
+	<body>
+		<header>
+			<div class="border" align="center">
+				<table align="center">
+					<tr>
+						<td>
+							<nav>
+								<ul id="navigator">
+									<li class="nav">
+										<a href="" class="navitem">Home</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">About</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">Promotional Videos</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">Music Videos</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">Custom Videos</a>
+									</li>
+									<li class="nav">
+										<a href=""  class="navitem">Slide Show Videos</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">Contact Us</a>
+									</li>
+									<li class="nav">
+										<a href="" class="navitem">Portfolio</a>
+									</li>
+								</ul>
+							</nav>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</header>
+			<div align="center" id="slider">
+				<ul class="slides">
+					<li class="slide">
+						<iframe width="720" height="400" src="http://www.youtube.com/embed/6dyPPK99Fmk" frameborder="0" allowfullscreen>ERROR</iframe>
+					</li>
+					<li class="slide">
+						<button class="click">Slide</button>
+						<iframe width="720" height="400" src="https://www.youtube.com/embed/uu7ELdj54OY" frameborder="0" allowfullscreen>ERROR</iframe>
+					</li>
+					<li class="slide">
+						<button class="click">Slide</button>
+						<iframe width="720" height="400" src="https://www.youtube.com/embed/3_KvZ5NSSKw" frameborder="0" allowfullscreen>ERROR</iframe>
+					</li>
+					<li class="slide">
+						<button class="click">Slide</button>
+						<iframe width="720" height="400" src="https://www.youtube.com/embed/iutsWAjYIqU" frameborder="0" allowfullscreen>ERROR</iframe>
+					</li>
+					<li class="slide">
+						<button class="click">Slide</button>
+						<iframe width="720" height="400" src="http://www.youtube.com/embed/6dyPPK99Fmk" frameborder="0" allowfullscreen>ERROR</iframe>
+						
+					</li>
+				</u>
+			</div>
+		<footer align="center">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/WhatIfIFilms">
+						<img src="img_trans.gif" class="spriteFaceBook"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCatGagluPwkp8syJNPjzY7w">
+						<img src="img_trans.gif" class="spriteYouTube"/>
+					</a>
+				</li>
+				<li>
+					Static Iconic Navigation Credit: P.J. Onori
+				</li>
+			</ul>
+		</footer>
+		<script src="function.js"></script>
+		<script src="jquery.js"></script>
+		<script>
+		var inter;
+		$(function(){
+			$('.slideNavReverseButton').on('click', function(){
+				alert("test");
+				$('#slider .slides').animate({'margin-left':'-=' + slide}, function setpageppause(){
+					n++;
+					console.log(n);
+					if (n === 4){
+						n = 0;
+						$('.slides').css('margin-left', 0);
+					}
+				});
+			});
+			//style reverse start
+			$('.slideNavReverse').html("<img src='staticarrow.png' height='24px' width='24px' class='slideNavReverseButton'>");
+			$('.slideNavReverse').on('mouseenter', function(){
+				$('.slideNavReverse').html('<img src="reversehover.png" height="24px" width="24px" class="slideNavReverseButton">');
+			});
+			$('.slideNavReverse').on('mouseleave', function(){
+				$('.slideNavReverse').html("<img src='staticarrow.png' height='24px' width='24px' class='slideNavReverseButton'>");
+			});
+			//style reverse end
+			//styile Forward
+				$('.slideNavForward').html("<img src='staticarrow.png' height='24px' width='24px' class='slideNavForwardButton' style='-ms-transform:rotate(180deg); /* IE 9 */-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */'>");
+			$('.slideNavForward').on('mouseenter', function(){
+				$('.slideNavForward').html('<img src="forwardhover.png" height="24px" width="24px" class="slideNavForwardButton">');
+			});
+			$('.slideNavForward').on('mouseleave', function(){
+				$('.slideNavForward').html("<img src='staticarrow.png' height='24px' width='24px' class='slideNavForwardButton' style='-ms-transform:rotate(180deg); /* IE 9 */-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */'>");
+			});
+			//style Forward end
+		});
+		</script>
+	</body>
+</html>
