@@ -56,6 +56,9 @@ body{
 }
 /*content styler end*/
 /*Image slider styling start*/
+.naviybuttonthings{
+	display: inline-block;
+}
 #slider{
 	width: 720px;
 	height: 400px;
@@ -79,8 +82,49 @@ body{
 	width: 720px;
 	height: 400px;
 }
-.click{
-	border-radius: 25px;
+ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+img.slideNavReverse2{
+	margin: auto;
+	background: url('staticarrow.png') no-repeat 0 0;
+	background-size: 24px 24px;
+}img.slideNavReverse2:hover{
+	margin: auto;
+	background: url('reversehover.png') no-repeat 0 0;
+	background-size: 24px 24px;
+}
+img.slideNavForward2{
+	margin: auto;
+	background: url('staticarrow.png') no-repeat 0 0;
+	background-size: 24px 24px;
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}img.slideNavForward2:hover{
+	margin: auto;
+	background: url('reversehover.png') no-repeat 0 0;
+	background-size: 24px 24px;
+}
+img.slideNavReverse{
+	margin: auto;
+	background: url('staticarrow.png') no-repeat 0 0;
+	background-size: 24px 24px;
+}img.slideNavReverse:hover{
+	margin: auto;
+	background: url('reversehover.png') no-repeat 0 0;
+	background-size: 24px 24px;
+}
+img.slideNavForward{
+	margin: auto;
+	background: url('staticarrow.png') no-repeat 0 0;
+	background-size: 24px 24px;
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}img.slideNavForward:hover{
+	margin: auto;
+	background: url('reversehover.png') no-repeat 0 0;
+	background-size: 24px 24px;
 }
 /*Image slider styling end*/
 /*footer style start*/
