@@ -83,47 +83,56 @@ body{
 	width: 720px;
 	height: 400px;
 }
-ul li{
+ul.naviybuttonthings li{
 	list-style-type: none;
 	display: inline-block;
+	padding: 5px;
 }
 img.slideNavReverse2{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }img.slideNavReverse2:hover{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }
 img.slideNavForward2{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
 	-ms-transform:rotate(180deg); /* IE 9 */
 	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
 }img.slideNavForward2:hover{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }
 img.slideNavReverse{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }img.slideNavReverse:hover{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }
 img.slideNavForward{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
 	-ms-transform:rotate(180deg); /* IE 9 */
 	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
 }img.slideNavForward:hover{
-	margin: auto;
+	padding: 5px;
+	position: absolute;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
 }

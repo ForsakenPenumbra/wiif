@@ -70,16 +70,16 @@
 						</li>
 					</ul>
 				</div>
-				<ul class="naviybuttonthings" style="height: 24px; width:24px;">
-					<li>
-						<img src="img_trans.gif" class="slideNavReverse">
-					</li>
-				</ul>
-				<ul class="naviybuttonthings2" style="height: 24px; width:24px;">
-					<li>
-						<img src="img_trans.gif" class="slideNavForward">
-					</li>
-				</ul>
+				<div>
+					<ul class="naviybuttonthings" style="height: 24px; width:24px;">
+						<li>
+							<img src="img_trans.gif" class="slideNavReverse">
+						</li>
+						<li>
+							<img src="img_trans.gif" class="slideNavForward">
+						</li>
+					</ul>
+				</div>
 			</div>
 			<footer align="center">
 				<ul class="videonav">
@@ -107,10 +107,6 @@
 				console.log(slideWindow.top, slideWindow.right, slideWindow.bottom, slideWindow.left);
 				var down = slideWindow.bottom + 50;
 				var middle = (slideWindow.left + slideWindow.right) /2 ;
-				$('.naviybuttonthings').css('margin-top', down);
-				$('.naviybuttonthings').css('margin-left', middle);
-				
-				$('.naviybuttonthings2').css('margin-left', middle);
 
 				$('#slider', '.slides', '.slide').hide();
 				$('.slides').css('margin-left', -720);
