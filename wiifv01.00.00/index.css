@@ -89,7 +89,7 @@ body{
 	height: 24px;
 	margin: auto;
 }
-div#buttonAllocator > li{
+#buttonAllocator > li{
 	display: inline-block;
 	list-style-type: none;
 }
