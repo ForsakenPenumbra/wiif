@@ -98,13 +98,11 @@ img.slideNavReverse2{
 	position: relative;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }img.slideNavReverse2:hover{
 	padding: 5px;
 	position: relative;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }
 img.slideNavForward2{
 	padding: 5px;
@@ -113,26 +111,22 @@ img.slideNavForward2{
 	background-size: 24px 24px;
 	-ms-transform:rotate(180deg); /* IE 9 */
 	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
-	padding: 0 180px;
 }img.slideNavForward2:hover{
 	padding: 5px;
 	position: relative;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }
 img.slideNavReverse{
 	padding: 5px;
 	position: relative;
 	background: url('staticarrow.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }img.slideNavReverse:hover{
 	padding: 5px;
 	position: relative;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }
 img.slideNavForward{
 	padding: 5px;
@@ -141,13 +135,11 @@ img.slideNavForward{
 	background-size: 24px 24px;
 	-ms-transform:rotate(180deg); /* IE 9 */
 	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
-	padding: 0 180px;
 }img.slideNavForward:hover{
 	padding: 5px;
 	position: relative;
 	background: url('reversehover.png') no-repeat 0 0;
 	background-size: 24px 24px;
-	padding: 0 180px;
 }
 /*Image slider styling end*/
 /*footer style start*/
