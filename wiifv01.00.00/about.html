@@ -47,29 +47,31 @@
 				</table>
 			</div>
 		</header>
-			<footer align="center">
-				<ul class="videonav">
-					<li>
-						<a href="https://www.facebook.com/WhatIfIFilms">
-							<img src="img_trans.gif" class="spriteFaceBook"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/channel/UCatGagluPwkp8syJNPjzY7w">
-							<img src="img_trans.gif" class="spriteYouTube"/>
-						</a>
-					</li>
-					<li>
-						Static Iconic Navigation Credit: P.J. Onori
-					</li>
-				</ul>
-			</footer>
-			<script src="function.js"></script>
-			<script src="jquery.js"></script>
-			<script>
-			$(function(){
-				
-			});
-			</script>
-		</body>
-	</html>
+		<div class="aboutContent"></div>
+		<footer align="center">
+			<ul class="videonav">
+				<li>
+					<a href="https://www.facebook.com/WhatIfIFilms">
+						<img src="img_trans.gif" class="spriteFaceBook"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCatGagluPwkp8syJNPjzY7w">
+						<img src="img_trans.gif" class="spriteYouTube"/>
+					</a>
+				</li>
+				<li>
+					Static Iconic Navigation Credit: P.J. Onori
+				</li>
+			</ul>
+		</footer>
+		<script src="function.js"></script>
+		<script src="jquery.js"></script>
+		<script src="ui.js"></script>
+		<script>
+		$(function(){
+			$('.aboutContent').html('<p class="content"><span>' + about + '</span></p>')
+		});
+		</script>
+	</body>
+</html>

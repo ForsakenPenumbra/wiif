@@ -1,191 +1,239 @@
+
+ .clear
+{
+        clear: both;
+}
+
 /*body construct start*/
 body{
-	margin: 0;
-	background-image: url('IMG_5498combo.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+        margin: 0;
+        background-image: url('IMG_5498combo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 /*body construct end*/
 /*Navigation Bar Start*/
 .border{
-	border-bottom: 2px solid red;
-	position: relative;
-	top: 0px;
-	left:5%;
-	width: 90%;
+        border-bottom: 2px solid red;
+        position: relative;
+        top: 0px;
+        left:5%;
+        width: 90%;
 }
 .nav{
-	display: inline-block;
-	text-decoration: none;
-	color: orange;
+        display: inline-block;
+        text-decoration: none;
+        color: orange;
 }
 .navitem{
-	font-size: 150%;
-	text-decoration: none;
-	color: inherit;
+        font-size: 150%;
+        text-decoration: none;
+        color: inherit;
 }
 .navitem:link{
-	text-decoration: none;
-	padding: 30px;
+        text-decoration: none;
+        padding: 30px;
 }
 .navitem:visited{
-	text-decoration: none;
+        text-decoration: none;
 }
 .navitem:hover{
-	background: url(nav-active-orange.png) bottom repeat-x;
+        background: url(nav-active-orange.png) bottom repeat-x;
 }
 .navitem:active{
-	text-decoration: none;
+        text-decoration: none;
 }
 #navigator .nav{
-	margin: 0;
-	text-align: center;
-	font-size: 120%;
+        margin: 0;
+        text-align: center;
+        font-size: 120%;
 }
 .divide{
-	border: 1px solid orange; 
-	width: 76%;
+        border: 1px solid orange; 
+        width: 76%;
 
 }
 /*Navigation Bar End*/
 /*content styler start*/
 .content{
-	box-shadow: 0 0 25px orange;
-	color: orange;
-	font-size: 120%
+	color: black;
+	font-size: 130%;
+	text-align:center;
 }
+.content>span{
+	background-color: #FF9900;
+	border-radius: 10px;
+}
+#descritption{
+	}
 /*content styler end*/
 /*Image slider styling start*/
 .naviybuttonthings{
-	display: inline-block;
+        display: inline-block;
 }
 #slider{
-	width: 720px;
-	height: 400px;
-	overflow: hidden;
-	border: 4px solid;
-	border-color: #555;
-	position: relative;
-	margin: auto;
- 	top: 0; left: 0; bottom: 0; right: 0;
- 	vertical-align: middle;
- 	z-index: -2;
+        width: 720px;
+        height: 400px;
+        overflow: hidden;
+        border: 4px solid;
+        border-color: #555;
+        position: relative;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+        vertical-align: middle;
+        z-index: -2;
 }
 #slider .slides{
-	display: block;
-	width: 6000px;
-	height: 400px;
-	margin: 0;
-	padding: 0;
+        display: block;
+        width: 6000px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
 }
 #slider .slide{
-	float: left;
-	list-style-type: none;
-	width: 720px;
-	height: 400px;
+        float: left;
+        list-style-type: none;
+        width: 720px;
+        height: 400px;
 }
 #buttonAllocator{
-	width: 720px;
-	height: 24px;
-	margin: auto;
+        width: 420px; /* Edited code by Lino Agli */ /* original code => width: 720px;*/
+        height: 24px;
+        margin: auto;
 }
 #buttonAllocator > li{
-	display: inline-block;
-	list-style-type: none;
+        display: inline-block;
+        list-style-type: none;
 }
 img.slideNavReverse2{
-	padding: 5px;
-	position: relative;
-	background: url('staticarrow.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('staticarrow.png') no-repeat 0 0;
+        background-size: 24px 24px;
+        padding: 0 180px;
 }img.slideNavReverse2:hover{
-	padding: 5px;
-	position: relative;
-	background: url('reversehover.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('reversehover.png') no-repeat 0 0;
+        background-size: 24px 24px;
+        padding: 0 180px;
 }
 img.slideNavForward2{
-	padding: 5px;
-	position: relative;
-	background: url('staticarrow.png') no-repeat 0 0;
-	background-size: 24px 24px;
-	-ms-transform:rotate(180deg); /* IE 9 */
-	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+        padding: 5px;
+        position: relative;
+        background: url('staticarrow.png') no-repeat 0 0;
+        background-size: 24px 24px;
+        -ms-transform:rotate(180deg); /* IE 9 */
+        -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+        padding: 0 180px;
 }img.slideNavForward2:hover{
-	padding: 5px;
-	position: relative;
-	background: url('reversehover.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('reversehover.png') no-repeat 0 0;
+        background-size: 24px 24px;
+        padding: 0 180px;
 }
 img.slideNavReverse{
-	padding: 5px;
-	position: relative;
-	background: url('staticarrow.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('staticarrow.png') no-repeat 0 0;
+        
+        
+        /* Edited code by Lino Agli */
+        /*padding: 0 180px;*/
+        background-size: 34px 34px;
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+        float: left;
 }img.slideNavReverse:hover{
-	padding: 5px;
-	position: relative;
-	background: url('reversehover.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('reversehover.png') no-repeat 0 0;
+        
+        
+        /* Edited code by Lino Agli */
+        /*padding: 0 180px;*/
+        background-size: 34px 34px;
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+        float: left;
 }
 img.slideNavForward{
-	padding: 5px;
-	position: relative;
-	background: url('staticarrow.png') no-repeat 0 0;
-	background-size: 24px 24px;
-	-ms-transform:rotate(180deg); /* IE 9 */
-	-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+        padding: 5px;
+        position: relative;
+        background: url('staticarrow.png') no-repeat 0 0;
+        
+        -ms-transform:rotate(180deg); /* IE 9 */
+        -webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+        
+        /* Edited code by Lino Agli */
+        /*padding: 0 180px;*/
+        background-size: 34px 34px;
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+        float: right;
 }img.slideNavForward:hover{
-	padding: 5px;
-	position: relative;
-	background: url('reversehover.png') no-repeat 0 0;
-	background-size: 24px 24px;
+        padding: 5px;
+        position: relative;
+        background: url('reversehover.png') no-repeat 0 0;
+        
+        
+        /* Edited code by Lino Agli */
+        /*padding: 0 180px;*/
+        background-size: 34px 34px;
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+        float: right;
 }
 /*Image slider styling end*/
 /*footer style start*/
 footer{
-	position:absolute;
+        position:absolute;
    bottom:0;
    width:100%;
    height:60px;
    background-color: #FF9900;
 }
 footer ul li{
-	display: inline-block;
-	text-decoration: none;
+        display: inline-block;
+        text-decoration: none;
 }
 /*footer style end*/
 /*sprite style start*/
 img.spriteFaceBook {
-	background: url('facebook.png') no-repeat -5px -34px;
-	width: 13px;
-	height: 24px;
-	padding: 0 5px;
+        background: url('facebook.png') no-repeat -5px -34px;
+        width: 13px;
+        height: 24px;
+        padding: 0 5px;
 }
 img.spriteFaceBook:hover {
-	background: url('facebook.png') no-repeat -5px 0;
-	width: 13px;
-	height: 24px;
+        background: url('facebook.png') no-repeat -5px 0;
+        width: 13px;
+        height: 24px;
 }
 img.spriteYouTube {
-	background: url('yelp.png') no-repeat 0 -34px;
-	width: 24px;
-	height: 24px;
-	padding: 0 5px;
+        background: url('yelp.png') no-repeat 0 -34px;
+        width: 24px;
+        height: 24px;
+        padding: 0 5px;
 }
 img.spriteYouTube:hover{
-	background: url('yelp.png') no-repeat 0 0;
-	width: 24px;
-	height: 24px;
+        background: url('yelp.png') no-repeat 0 0;
+        width: 24px;
+        height: 24px;
 }
 .slideNavReverse{
-	width: 24px;
-	padding: 5px;
-	cursor: pointer;
+        width: 24px;
+        padding: 5px;
+        cursor: pointer;
 }
 .slideNavForward{
-	width: 24px;
-	padding: 5px;
-	cursor: pointer;
+        width: 24px;
+        padding: 5px;
+        cursor: pointer;
 }
 /*sprite style end*/
