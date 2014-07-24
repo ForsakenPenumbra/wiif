@@ -13,6 +13,11 @@ body{
 }
 /*body construct end*/
 /*Navigation Bar Start*/
+h1{
+	color: #FF9900;
+	font-size: 200%;
+	text-align: center;
+}
 .border{
         border-bottom: 2px solid red;
         position: relative;
@@ -26,7 +31,7 @@ body{
         color: orange;
 }
 .navitem{
-        font-size: 150%;
+        font-size: 125%;
         text-decoration: none;
         color: inherit;
 }
@@ -66,6 +71,12 @@ body{
 }
 #descritption{
 	}
+.aboutContent{
+	margin: auto;
+	position: relative; 
+	top: 145px; 
+	max-width: 12%;
+}
 /*content styler end*/
 /*Image slider styling start*/
 .naviybuttonthings{
@@ -139,7 +150,6 @@ img.slideNavReverse{
         background: url('staticarrow.png') no-repeat 0 0;
         
         
-        /* Edited code by Lino Agli */
         /*padding: 0 180px;*/
         background-size: 34px 34px;
         width: 24px;
@@ -152,7 +162,6 @@ img.slideNavReverse{
         background: url('reversehover.png') no-repeat 0 0;
         
         
-        /* Edited code by Lino Agli */
         /*padding: 0 180px;*/
         background-size: 34px 34px;
         width: 24px;
@@ -190,10 +199,21 @@ img.slideNavForward{
         float: right;
 }
 /*Image slider styling end*/
+/*img styling start*/
+.img{
+	width: 30%;
+	height: 500px;
+	border: 2px solid black;
+	margin: auto;
+}
+.img img{
+	width: 100%;
+	height: 500px;
+	margin: 0px;
+}
+/*img styling end*/
 /*footer style start*/
 footer{
-        position:absolute;
-   bottom:0;
    width:100%;
    height:60px;
    background-color: #FF9900;

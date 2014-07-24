@@ -10,6 +10,7 @@
 	</head>
 	<body>
 		<header>
+			<h1>What If I...Films</h1>
 			<div class="border" align="center">
 				<table align="center">
 					<tr>
@@ -21,18 +22,6 @@
 									</li>
 									<li class="nav">
 										<a href="about.html" class="navitem">About</a>
-									</li>
-									<li class="nav">
-										<a href="promo.html" class="navitem">Promotional Videos</a>
-									</li>
-									<li class="nav">
-										<a href="music.html" class="navitem">Music Videos</a>
-									</li>
-									<li class="nav">
-										<a href="custom.html" class="navitem">Custom Videos</a>
-									</li>
-									<li class="nav">
-										<a href="ss.html"  class="navitem">Slide Show Videos</a>
 									</li>
 									<li class="nav">
 										<a href="contact.html" class="navitem">Contact Us</a>
@@ -73,7 +62,7 @@
 		</div>
 		<br>
 		<div id="descritption"></div>
-		<footer align="center">
+		<footer align="center" id="footer">
 			<ul class="videonav">
 				<li>
 					<a href="https://www.facebook.com/WhatIfIFilms">
@@ -129,6 +118,38 @@
 						$('.slides').css('margin-left', -2880);
 					}
 				});
+			});
+			$(window).bind("load", function() { 
+       
+		       var footerHeight = 0,
+		       footerTop = 0,
+		       $footer = $("#footer");
+		           
+		       positionFooter();
+		       
+		       function positionFooter() {
+		       
+                footerHeight = $footer.height();
+                footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
+       
+               if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+                   $footer.css({
+                        position: "absolute"
+                   }).animate({
+                        top: footerTop
+                   })
+               } else {
+                   $footer.css({
+                        position: "static"
+                   })
+               }
+               
+      		}	
+
+		       $(window)
+	               .scroll(positionFooter)
+	               .resize(positionFooter)
+		               
 			});
 		});
 		</script>
