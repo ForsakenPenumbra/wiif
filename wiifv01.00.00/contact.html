@@ -36,61 +36,70 @@
 				</table>
 			</div>
 		</header>
-			<footer align="center" id="footer">
-				<ul class="videonav">
-					<li>
-						<a href="https://www.facebook.com/WhatIfIFilms">
-							<img src="img_trans.gif" class="spriteFaceBook"/>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/channel/UCatGagluPwkp8syJNPjzY7w">
-							<img src="img_trans.gif" class="spriteYouTube"/>
-						</a>
-					</li>
-					<li>
-						Static Iconic Navigation Credit: P.J. Onori
-					</li>
-				</ul>
-			</footer>
-			<script src="function.js"></script>
-			<script src="jquery.js"></script>
-			<script>
-			$(function(){
-				$(window).bind("load", function() { 
-       
-		       var footerHeight = 0,
-		       footerTop = 0,
-		       $footer = $("#footer");
-		           
-		       positionFooter();
-		       
-		       function positionFooter() {
-		       
-                footerHeight = $footer.height();
-                footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
-       
-               if ( ($(document.body).height()+footerHeight) < $(window).height()) {
-                   $footer.css({
-                        position: "absolute"
-                   }).animate({
-                        top: footerTop
-                   })
-               } else {
-                   $footer.css({
-                        position: "static"
-                   })
-               }
-               
-      		}	
+		<table align="center" class="contact">
+			<tr>
+				<td>
+					Contact Infomation
+				</td>
+			</tr>
+		</table>
+		<footer align="center" id="footer">
+			<ul class="videonav">
+				<li>
+					<a href="https://www.facebook.com/WhatIfIFilms">
+						<img src="img_trans.gif" class="spriteFaceBook"/>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/channel/UCatGagluPwkp8syJNPjzY7w">
+						<img src="img_trans.gif" class="spriteYouTube"/>
+					</a>
+				</li>
+				<li>
+					Static Iconic Navigation Credit: P.J. Onori
+				</li>
+			</ul>
+		</footer>
+		<script src="function.js"></script>
+		<script src="jquery.js"></script>
+		<script>
+		$(function(){
+			//css-tricks.com start
+			$(window).bind("load", function() { 
+   
+	       var footerHeight = 0,
+	       footerTop = 0,
+	       $footer = $("#footer");
+	           
+	       positionFooter();
+	       
+	       function positionFooter() {
+	       
+            footerHeight = $footer.height();
+            footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
+   
+           if ( ($(document.body).height()+footerHeight) < $(window).height()) {
+               $footer.css({
+                    position: "absolute"
+               }).animate({
+                    top: footerTop
+               })
+           } else {
+               $footer.css({
+                    position: "static"
+               })
+           }
+           //css-tricks.com end
+           
+  		}	
 
-		       $(window)
-	               .scroll(positionFooter)
-	               .resize(positionFooter)
-		               
-			});
-				
-			});
-			</script>
-		</body>
-	</html>
+	       $(window)
+               .scroll(positionFooter)
+               .resize(positionFooter)
+	               
+		});
+			
+		});
+		</script>
+	</body>
+</html>

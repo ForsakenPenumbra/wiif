@@ -71,11 +71,18 @@ h1{
 }
 #descritption{
 	}
+.container{
+	position: absolute;
+}
 .aboutContent{
 	margin: auto;
 	position: relative; 
 	top: 145px; 
 	max-width: 12%;
+}
+.contact{
+    color: #FF9900;
+    font-size: 150%
 }
 /*content styler end*/
 /*Image slider styling start*/
@@ -210,6 +217,29 @@ img.slideNavForward{
 	width: 100%;
 	height: 500px;
 	margin: 0px;
+}
+.iframe{
+	width: 100%;
+	height: 100%;
+}
+.image{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px;
+	height: 100%;
+	width: 30%;
+}
+.imgs{
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+#portContainer{
+	width: 36.0%;
+	margin: auto;
+	position: relative;
 }
 /*img styling end*/
 /*footer style start*/

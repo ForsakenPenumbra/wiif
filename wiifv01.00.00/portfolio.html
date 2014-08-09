@@ -36,9 +36,58 @@
 				</table>
 			</div>
 		</header>
-		<div class="container">
-			
-		</div>
+			<ul class="imgs" align="center">
+
+				<li class="image">
+					<img aria-hidden="true" width="240px" height="180px" alt="" src="https://i.ytimg.com/vi/TAMuNljM-cc/mqdefault.jpg" class="iframe" rel="firstimg">
+				</li>
+				<li class="image">
+					<img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/iDyKEOz4MaE/mqdefault.jpg" class="iframe" rel="secondimg">
+				</li>
+				<li class="image">
+					<img aria-hidden="true" alt="" src="https://i.ytimg.com/vi/6dyPPK99Fmk/mqdefault.jpg" class="iframe" rel="thirdimg">
+				</li>
+			</ul>
+			<table align="center" class="table active" id="firstimg">
+				<tr>
+					<td>
+						qwrqwretrg
+					</td>
+					<td>
+						qwr
+					</td>
+					<td>
+						qwrasdfasdffdgdf
+					</td>
+				</tr>
+			</table>
+			<table align="center" class="table active" id="secondimg">
+				<tr>
+					<td>
+						qwer
+					</td>
+					<td>
+						qwer
+					</td>
+					<td>
+						qwer
+					</td>
+				</tr>
+			</table>
+			<table align="center" class="table active" id="thirdimg">
+				<tr>
+					<td>
+						qwerasdfasdfasdfasd
+					</td>
+					<td>
+						qwerasdfasdfsfdasdf
+					</td>
+					<td>
+						qwerasdfasdfasdf
+					</td>
+				</tr>
+			</table>
+			<br>
 		<footer align="center" id="footer">
 			<ul class="videonav">
 				<li>
@@ -60,6 +109,7 @@
 		<script src="jquery.js"></script>
 		<script>
 		$(function(){
+			//css-tricks.com start
 			$(window).bind("load", function() { 
        
 		       var footerHeight = 0,
@@ -91,6 +141,23 @@
 	               .scroll(positionFooter)
 	               .resize(positionFooter)
 		               
+			});
+			//css-tricks.com end
+			var vmid = $(document).height()/3;
+			var hmid = $(document).width()/3;
+			var ymid = $(document).height()/2;
+			var xmid = $(document).width()/2;
+			console.log(hmid, vmid, xmid, ymid);
+			$('.image').css({border: '2.5px solid orange'});
+			$('.imgs').css({height: vmid});
+			$('#firstimg, #secondimg, #thirdimg').hide();
+			$('.imgs .iframe').on('click', function(){
+			var rowShow = $(this).attr('rel');
+			//hides and brings up selection
+			$('.table').slideUp(100, showRow).removeClass('active');
+				function showRow (){
+					$('#'+rowShow).slideDown(100).addClass('active');
+				};	
 			});
 			
 		});
